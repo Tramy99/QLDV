@@ -57,11 +57,6 @@ namespace QLDV.Controllers
                 return RedirectToAction("Index");
             }
 
-            if(xepLoai == null)
-            {
-                return View("Index");
-            }    
-
             ViewBag.madv = new SelectList(db.DoanViens, "madv", "tendv", xepLoai.madv);
             return View(xepLoai);
         }
