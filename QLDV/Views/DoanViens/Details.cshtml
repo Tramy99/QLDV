@@ -1,0 +1,75 @@
+﻿@model QLDV.Models.DoanVien
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thông tin</h2>
+
+<div>
+    <h4>Đoàn Viên</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ChiDoan.tencd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChiDoan.tencd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tendv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tendv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ns)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ns)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gioitinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gioitinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.quequan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quequan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngayvd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngayvd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dantoc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dantoc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.madv }) |
+    @Html.ActionLink("Quay lại", "Index")
+</p>

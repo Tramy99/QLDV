@@ -1,0 +1,81 @@
+﻿@model QLDV.Models.DoanVien
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Xóa</h2>
+<h4>Đoàn Viên</h4>
+<h3>Bạn chắc muốn xóa chứ?</h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ChiDoan.tencd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChiDoan.tencd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tendv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tendv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ns)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ns)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gioitinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gioitinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.quequan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quequan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngayvd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngayvd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dantoc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dantoc)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,27 @@
+﻿@model QLDV.Models.ChiDoan
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thông tin</h2>
+
+<div>
+    <h4>Chi Đoàn</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tencd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tencd)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.macd }) |
+    @Html.ActionLink("Quay lại", "Index")
+</p>

@@ -1,0 +1,43 @@
+﻿@model QLDV.Models.KhenThuong
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>KhenThuong</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DoanVien.tendv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoanVien.tendv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tenkt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tenkt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thanhtich)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thanhtich)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.makt }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

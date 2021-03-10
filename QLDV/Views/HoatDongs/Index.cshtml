@@ -1,0 +1,52 @@
+﻿@model IEnumerable<QLDV.Models.HoatDong>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Hoạt Động</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.madv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tenhd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thoigiantc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ghichu)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.madv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tenhd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thoigiantc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ghichu)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.mahd }) |
+            @Html.ActionLink("Details", "Details", new { id=item.mahd }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.mahd })
+        </td>
+    </tr>
+}
+
+</table>
