@@ -10,6 +10,7 @@ using QLDV.Models;
 
 namespace QLDV.Controllers
 {
+    [Authorize]
     public class HoatDongsController : Controller
     {
         private QLDVConnect db = new QLDVConnect();

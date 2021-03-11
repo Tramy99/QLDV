@@ -22,5 +22,7 @@ namespace QLDV.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }
+
+        public System.Data.Entity.DbSet<QLDV.Models.Account> Accounts { get; set; }
     }
 }

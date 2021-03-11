@@ -10,6 +10,7 @@ using QLDV.Models;
 
 namespace QLDV.Controllers
 {
+    [Authorize]
     public class XepLoaisController : Controller
     {
         private QLDVConnect db = new QLDVConnect();

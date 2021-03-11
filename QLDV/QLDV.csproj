@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ChiDoansController.cs" />
     <Compile Include="Controllers\DoanViensController.cs" />
     <Compile Include="Controllers\HoatDongsController.cs" />
@@ -149,10 +150,14 @@
     <Compile Include="Migrations\202103101321100_addsuabai.Designer.cs">
       <DependentUpon>202103101321100_addsuabai.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103101506025_addthu.cs" />
+    <Compile Include="Migrations\202103101506025_addthu.Designer.cs">
+      <DependentUpon>202103101506025_addthu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\ChiDoan.cs" />
     <Compile Include="Models\DoanVien.cs" />
-    <Compile Include="Models\ForeginKeyAttribute.cs" />
     <Compile Include="Models\HoatDong.cs" />
     <Compile Include="Models\KhenThuong.cs" />
     <Compile Include="Models\QLDVConnect.cs" />
@@ -220,6 +225,7 @@
     <Content Include="Views\XepLoais\Details.cshtml" />
     <Content Include="Views\XepLoais\Edit.cshtml" />
     <Content Include="Views\XepLoais\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -246,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103101321100_addsuabai.resx">
       <DependentUpon>202103101321100_addsuabai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103101506025_addthu.resx">
+      <DependentUpon>202103101506025_addthu.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
