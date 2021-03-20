@@ -30,6 +30,7 @@ namespace QLDV.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             KhenThuong khenThuong = db.KhenThuongs.Find(id);
+            ViewBag.TenDV = db.DoanViens.Find(khenThuong.madv).tendv;
             if (khenThuong == null)
             {
                 return HttpNotFound();

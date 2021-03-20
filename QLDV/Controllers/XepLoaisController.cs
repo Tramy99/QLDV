@@ -10,7 +10,6 @@ using QLDV.Models;
 
 namespace QLDV.Controllers
 {
-    [Authorize]
     public class XepLoaisController : Controller
     {
         private QLDVConnect db = new QLDVConnect();
@@ -58,7 +57,7 @@ namespace QLDV.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.madv = new SelectList(db.DoanViens, "madv", "tendv", xepLoai.madv);
+            ViewBag.madv = new SelectList(db.DoanViens, "madv", "tendv");
             return View(xepLoai);
         }
 

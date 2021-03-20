@@ -30,6 +30,7 @@ namespace QLDV.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             DoanVien doanVien = db.DoanViens.Find(id);
+            ViewBag.ChiDoan = db.ChiDoans.Find(doanVien.macd).tencd;
             if (doanVien == null)
             {
                 return HttpNotFound();

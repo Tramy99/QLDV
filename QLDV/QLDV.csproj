@@ -154,6 +154,10 @@
     <Compile Include="Migrations\202103101506025_addthu.Designer.cs">
       <DependentUpon>202103101506025_addthu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103200645393_abc.cs" />
+    <Compile Include="Migrations\202103200645393_abc.Designer.cs">
+      <DependentUpon>202103200645393_abc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\ChiDoan.cs" />
@@ -220,12 +224,12 @@
     <Content Include="Views\KhenThuongs\Details.cshtml" />
     <Content Include="Views\KhenThuongs\Edit.cshtml" />
     <Content Include="Views\KhenThuongs\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\XepLoais\Create.cshtml" />
     <Content Include="Views\XepLoais\Delete.cshtml" />
     <Content Include="Views\XepLoais\Details.cshtml" />
     <Content Include="Views\XepLoais\Edit.cshtml" />
     <Content Include="Views\XepLoais\Index.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -255,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103101506025_addthu.resx">
       <DependentUpon>202103101506025_addthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103200645393_abc.resx">
+      <DependentUpon>202103200645393_abc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
